@@ -23,7 +23,7 @@ That's the Abstract Factory pattern.
 ```mermaid
 graph TD
     subgraph "Client"
-        Client["🏠 HomeOwner"]
+        C["🏠 HomeOwner"]
     end
     
     subgraph "Abstract Factory"
@@ -50,7 +50,7 @@ graph TD
         ML["ModernLamp"]
     end
     
-    Client -->|chooses| AF
+    C -->|chooses| AF
     AF -->|implemented by| VF
     AF -->|implemented by| MF
     VF -->|creates| VS
@@ -60,7 +60,7 @@ graph TD
     MF -->|creates| MT
     MF -->|creates| ML
     
-    style Client fill:#e3f2fd,stroke:#1565c0
+    style C fill:#e3f2fd,stroke:#1565c0
     style AF fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
     style VF fill:#e8f5e9,stroke:#2e7d32
     style MF fill:#e8f5e9,stroke:#2e7d32

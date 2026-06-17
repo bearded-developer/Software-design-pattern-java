@@ -1,3 +1,5 @@
+package patterns.structural.facade;
+
 /**
  * 🏪 Facade Pattern
  * 
